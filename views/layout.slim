@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    link type="text/css" rel="stylesheet" href="/style.css"
+    script src="/global.js"
+    title Slider
+  body
+    div class="container center"
+      div class="header"
+      a href="#" class="arrow" id="back_slide"
+        div class="nav_arrows"
+          | ←
+      div class="projector" id="projector"
+        == yield
+      a href="#" class="arrow" id="forward_slide"
+        div class="nav_arrows"
+          | →
+      div class="footer"
